@@ -1,0 +1,83 @@
+.performance-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.performance-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+}
+
+.performance-card {
+  background: linear-gradient(135deg, rgba(88, 100, 255, 0.18), rgba(20, 25, 45, 0.6));
+  border-radius: 1rem;
+  padding: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.02);
+}
+
+.performance-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+  color: var(--muted-text);
+}
+
+.performance-card-header .positive {
+  color: var(--green);
+}
+
+.performance-card-header .negative {
+  color: var(--red);
+}
+
+.performance-value {
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.performance-subtext {
+  margin: 0.35rem 0 0;
+  font-size: 0.85rem;
+  color: var(--muted-text);
+}
+
+.insights {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.insight {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  background: rgba(14, 18, 32, 0.75);
+  border-radius: 0.85rem;
+  padding: 0.85rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.insight-indicator {
+  width: 0.65rem;
+  height: 0.65rem;
+  border-radius: 50%;
+  margin-top: 0.35rem;
+}
+
+.insight-title {
+  margin: 0;
+  font-weight: 600;
+}
+
+.insight-description {
+  margin: 0.15rem 0 0;
+  font-size: 0.85rem;
+  color: var(--muted-text);
+  line-height: 1.5;
+}

@@ -1,0 +1,96 @@
+.asset-table {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  border-radius: 1.1rem;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: rgba(12, 16, 26, 0.85);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 720px;
+}
+
+th,
+td {
+  padding: 1rem;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+th {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.75rem;
+  color: var(--muted-text);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+tbody tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+td {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.asset-name {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.asset-dot {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+}
+
+.asset-title {
+  margin: 0;
+  font-weight: 600;
+}
+
+.asset-sector {
+  margin: 0.2rem 0 0;
+  font-size: 0.75rem;
+  color: var(--muted-text);
+}
+
+.allocation-pill {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.allocation-meter {
+  position: relative;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+  height: 0.4rem;
+  overflow: hidden;
+}
+
+.allocation-meter span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+}
+
+.positive {
+  color: var(--green);
+}
+
+.negative {
+  color: var(--red);
+}
