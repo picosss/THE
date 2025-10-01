@@ -1,0 +1,22 @@
+.chart-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.chart-wrapper {
+  width: 100%;
+  background: rgba(12, 15, 28, 0.85);
+  border-radius: 1.25rem;
+  padding: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.chart-panel .recharts-cartesian-axis-tick-value {
+  font-size: 0.8rem;
+  fill: rgba(255, 255, 255, 0.5);
+}
+
+.chart-panel .recharts-tooltip-wrapper {
+  outline: none;
+}
